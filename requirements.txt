@@ -1,0 +1,12 @@
+fastapi==0.87.0
+fastapi-jwt-auth==0.5.0
+beanie==1.15.4
+python-multipart==0.0.5
+qrcode==7.3.1
+passlib==1.7.4
+bcrypt==4.0.1
+uvicorn==0.20.0
+aiofiles==22.1.0
+Jinja2==3.1.2
+python-dotenv
+cloudinary
