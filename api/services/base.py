@@ -1,4 +1,4 @@
-from beanie import Document, PydanticObjectId
+from beanie import Document
 
 class ServiceBase:
   model: Document
@@ -30,4 +30,5 @@ class ServiceBase:
 
   async def delete(self, id: str):
     db_obj = await self.get(id)
-    return await db_obj.delete()
+    await db_obj.delete()
+    return

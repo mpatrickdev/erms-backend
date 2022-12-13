@@ -22,7 +22,7 @@ async def list_products(category: str = None):
 async def read_product(db_obj: Product = Depends(find_or_404)):
   return db_obj
 
-@router.post('/')
+@router.post('')
 async def create_product(obj: ProductCreate):
   return await product_service.create(obj.dict())  
 

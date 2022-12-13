@@ -12,7 +12,8 @@ app = FastAPI()
 app = FastAPI()
 
 origins = [
-  'http://localhost:9000'
+  'http://localhost:9000',
+  'https://erms-api.onrender.com'
 ]
 app.add_middleware(
     CORSMiddleware,
